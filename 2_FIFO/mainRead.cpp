@@ -9,11 +9,9 @@ int main()
     int fd = open("my_fifo", O_RDONLY);
     if (fd < 0)
     {
-        std::cout << "open fifo error" << std::endl;
+        std::cout << "open fifo error." << std::endl;
         return -1;
     }
-    else 
-        std::cout << "mainRead open fifo success" << std::endl;
     char buff[BUFF_SIZE];
     ssize_t len = read(fd, buff, BUFF_SIZE);
     for (ssize_t i = 0; i < len; i++)
