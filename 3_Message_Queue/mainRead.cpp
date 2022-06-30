@@ -3,7 +3,7 @@
 #include <sys/msg.h>
 #include "publicdef.h"
 
-// first run mainWrite, then run mainRead(this) in 5s
+// first run mainwrite, then run mainread(this) in 5s
 int main()
 {
     int msgId = msgget(MSGKEY, 0666);

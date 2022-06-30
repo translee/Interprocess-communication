@@ -3,7 +3,7 @@
 #include <fcntl.h>
 constexpr int BUFF_SIZE = 1024;
 
-// first run mainWrite, then run mainRead(this)
+// first run mainwrite, then run mainread(this)
 int main()
 {   
     int fd = open("my_fifo", O_RDONLY);

@@ -13,4 +13,3 @@ mainread:publicdef.h mainread.cpp
 
 clean:
 	rm -rf *.o
-	

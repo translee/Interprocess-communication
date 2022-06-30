@@ -5,7 +5,7 @@
 #include <sys/msg.h>
 #include "publicdef.h"
 
-// first run mainWrite(this), then run mainRead in 5s
+// first run mainwrite(this), then run mainread in 5s
 int main()
 {
     int msgId = msgget(1234, IPC_CREAT| IPC_EXCL | 0666);

@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <fcntl.h>
  
-// first run mainWrite(this), then run mainRead
+// first run mainwrite(this), then run mainread
 int main()
 {
     int ret = mkfifo("my_fifo", 0666);
